@@ -10,6 +10,6 @@ public class Senhas implements Constantes{
 
     @Override
     public void gerarSenha() {
-        
+
     }
 }

@@ -9,5 +9,8 @@ public class Main {
         final int tamanhoSenha = scanner.nextInt();
         System.out.println("Quantas senhas você quer criar?");
         final int quantidadeSenha = scanner.nextInt();
+
+        Senhas senha = new Senhas(tamanhoSenha, quantidadeSenha);
+        senha.gerarSenha();
     }
 }
