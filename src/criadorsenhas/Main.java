@@ -22,9 +22,14 @@ public class Main {
                 Scanner scanner = new Scanner(System.in);
                 System.out.println(pergunta);
                 input = scanner.nextInt();
+                if (input <= 0) {
+                    throw new IllegalArgumentException();
+                }
                 signal = false;
             } catch (InputMismatchException ime) {
                 System.out.println("Digite um número inteiro!");
+            } catch (IllegalArgumentException iae) {
+                System.out.println("A entrada deve ser positivo e maior do que zero!");
             }
         } while (signal);
         return input;
