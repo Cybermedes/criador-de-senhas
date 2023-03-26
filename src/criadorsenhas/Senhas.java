@@ -17,8 +17,8 @@ public class Senhas implements Constantes{
         int numberRandom, letterRandom, numberOptions, characterRandom;
 
         System.out.println("===================================");
-        for (int j = 0; j <= quantidadeSenha; j++) {
-            for (int i = 0; i < tamanhoSenha; i++) {
+        for (int j = 1; j <= quantidadeSenha; j++) {
+            for (int i = 1; i <= tamanhoSenha; i++) {
                 numberOptions = rand.nextInt(4);
                 letterRandom = rand.nextInt(26);
                 numberRandom = rand.nextInt(10);
